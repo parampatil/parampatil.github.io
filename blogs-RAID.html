@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Param's Blogs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Param Patil</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="index.html#anchor-about">About Me</a></li>
+								<li><a href="index.html#anchor-certificates">Certificates</a></li>
+								<li><a href="index.html#Anchor-projects">Blogs & Projects</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>RAID</h2>
+								<p>Redundant Array of Inexpensive (or sometimes "Independent") Disks.<br>RAID LEVELS EXPLAINED IN SIMPLE TERMS</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+
+							<div class="wrapper">
+								<div class="inner">
+									
+									<section>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-12"><span class="image fit"><img src="images/RAID.jpg" alt="" /></span></div>
+											</div>
+										</div>
+										<h3 class="major">Introduction</h3>
+										<p>&emsp;&emsp;If you've ever looked into purchasing a NAS device or server, particularly for a small business, you've no doubt come across the term "RAID". RAID stands for Redundant Array of Inexpensive (or sometimes "Independent") Disks. A RAID system consists of two or more drives working in parallel. These can be hard discs, but there is a trend to also use the technology for SSD (Solid State Drives). With RAID enabled on a storage system, you can connect two or more drives in the system so they act as one large volume fast drive or set them up as one system drive used to automatically and instantaneously duplicate (or mirror) your data for real-time backup. This article covers the following RAID levels:
+										    <br>&emsp;&emsp;&emsp;&emsp;RAID 0 – striping
+											<br>&emsp;&emsp;&emsp;&emsp;RAID 1 – mirroring
+											<br>&emsp;&emsp;&emsp;&emsp;RAID 5 – striping with parity
+											<br>&emsp;&emsp;&emsp;&emsp;RAID 10 – combining mirroring and striping
+											<br><br>&emsp;&emsp;RAID is used to organize/control drives. RAID functionality can be implemented using software or a hardware controller. Some versions of Windows, such as Windows Server 2012 as well as Mac OS X, include software RAID functionality. Hardware RAID controllers cost more than pure software, but they also offer better performance, especially with RAID 5 and 6.
+										</p>
+										
+										<h3 class="major">Choosing The Right Raid Level :</h3>
+										<p>&emsp;&emsp;As mentioned, there are several RAID levels, and the one you choose depends on whether you are using RAID for performance or fault tolerance (or both). It also matters whether you have hardware or software RAID because the software supports fewer levels than hardware-based RAID. In the case of hardware RAID, the type of controller you have matters, too. Different controllers support different levels of RAID and also dictate the kinds of disks you can use in an array: SAS, SATA or SSD.</p>			
+										
+										<h3 class="major">Here’s the list of Popular RAID Levels :</h3>
+										
+										<p><span class="image right"><img src="images/RAID blog 1.png" alt="" /></span><h4>RAID 0 – PERFORMANCE</h4>&emsp;&emsp;RAID 0 mode provides disk striping across all drives in the RAID drive group. That is RAID 0 splits data across any number of disks allowing higher data throughput. An individual file is read from multiple disks giving it access to the speed and capacity of all of them. RAID 0 does not provide data redundancy and fault tolerance but does provide the best performance of any RAID levels.
+											<br><br><b>Minimum number of disks: </b> 2
+											<br><b>Pros: </b> Increased performance (Write and read speeds).
+											<br><b>Cons: </b> No redundancy.
+											<br><b>Business use: </b> Live streaming, IPTV, VOD Edge Server
+										</p>			
+										
+										
+										<h3 class="major"></h3>
+										
+										<p><span class="image right"><img src="images/RAID blog 2.png" alt="" /></span><h4>RAID 1 - DATA PROTECTION</h4>
+											&emsp;&emsp;Set the system to data protection mode (also known as the mirrored mode or RAID 1) and the capacity is divided in half. Half of the capacity is used to store your data and half is used for a duplicate copy. If one drive goes down your data is protected because it's duplicated.<br>
+											<br><b>Minimum number of disks: </b> 2
+											<br><b>Pros: </b> Fault tolerance and easy data recovery. Increased read performance.
+											<br><b>Cons: </b> Lower usable capacity. Higher cost per megabyte (double the amounts of drives is required to achieve desired capacity).
+											<br><b>Business use: </b> Standard application servers where data redundancy and availability are important.
+										</p>
+										
+										<h3 class="major"></h3>
+
+										<p><span class="image right"><img src="images/RAID blog 3.png" alt="" /></span><h4>RAID 5 - DATA PROTECTION AND SPEED</h4>
+											&emsp;&emsp;In systems with three or more drives, it is recommended that you set the system to RAID 5. This gives the best of both worlds: fast performance by striping data across all drives; data protection by dedicating a quarter of each drive in a four-drive system to fault tolerance leaving three-quarters of the system capacity available for data storage. With RAID 5, data and parity (which is additional data used for recovery) are striped across three or more disks. If a disk gets an error or starts to fail, data is recreated from this distributed data and parity block— seamlessly and automatically.<br>
+											<br><b>Minimum number of disks: </b> 3
+											<br><b>Pros: </b> Fault tolerance and increased performance (lower than RAID 0)
+											<br><b>Cons: </b> Lower performance with servers performing large amounts of write operations because of parity overhead.
+											<br><b>Ideal use: </b> File storage servers and application servers.
+										</p>
+										
+										<h3 class="major"></h3>
+
+										<p><span class="image right"><img src="images/RAID blog 4.png" alt="" /></span><h4>RAID 6 - STRIPING WITH DOUBLE PARITY</h4>
+											&emsp;&emsp;Raid 6 is similar to RAID 5, however, it provides increased reliability as it stores an extra parity block. That effectively means that it is possible for two drives to fail at once without breaking the array.<br>
+											<br><b>Minimum number of disks: </b> 4
+											<br><b>Pros: </b> Even higher redundancy than RAID 5. Increased read performance.
+											<br><b>Cons: </b> Lower performance with servers performing large amounts of write operations because of parity overhead.
+											<br><b>Ideal use: </b> Large file storage servers and application servers.
+										</p>
+										
+										<h3 class="major"></h3>
+
+										<p><span class="image right"><img src="images/RAID blog 6.png" alt="" /></span><h4>RAID 10 - HIGH RELIABILITY AND PERFORMANCE</h4>
+											&emsp;&emsp;RAID 10 combines the mirroring of RAID 1 with the striping of RAID 0. Or in other words, it combines the redundancy of RAID 1 with the increased performance of RAID 0. It is best suitable for environments where both high performance and security is required. But it is also costly, requiring twice as many disks as other RAID levels, for a minimum of four.<br>
+											<br><b>Minimum number of disks: </b> 4
+											<br><b>Pros: </b> Very high performance. Fault tolerance.
+											<br><b>Cons: </b> Lower usable capacity/High cost. Limited scalability
+											<br><b>Ideal use: </b> Highly utilized database servers/ servers performing a lot of write operations.
+										</p>
+										
+										<h3 class="major"></h3>
+										<br>
+										<h4>OTHER RAID LEVELS :</h4>
+										<p>&emsp;&emsp;There are other RAID levels: 2, 3, 4, 6, 7, 0+1...but they are really variants of the main RAID configurations already mentioned, and they're used for specific cases.</p>
+										
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-12"><span class="image fit"><img src="images/RAID blog 5.png" alt="" /></span></div>
+											</div>
+										</div>
+										
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<section class="features">
+								<article>
+									<a href="blogs-NAS.html" class="image"><img src="images/NAS blog 1.png" alt="" /></a>
+									<h3 class="major">NAS</h3>
+									<p>What is Network Attached Storage?</p>
+									<a href="blogs-NAS.html" class="special">Learn more</a>
+								</article>
+								<article>
+									<a href="blogs-lan.html" class="image"><img src="images/Lan Blog - Header.png" alt="" /></a>
+									<h3 class="major">Lan</h3>
+									<p>Things you didn't know about ethernet cable</p>
+									<a href="blogs-lan.html" class="special">Learn more</a>
+								</article>
+							</section>
+						
+							<ul class="copyright">
+								<li>&copy; All rights reserved.</li><li>Design: Param Patil</li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
