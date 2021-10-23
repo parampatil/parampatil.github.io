@@ -2666,7 +2666,7 @@ input, select, textarea {
 
 		ul.contact li {
 			text-decoration: none;
-			margin: 2.5em 0 0 0;
+			margin: 2em 0 0 0;
 			padding: 0 0 0 3.25em;
 			position: relative;
 		}
@@ -2984,7 +2984,7 @@ input, select, textarea {
 			input[type="button"],
 			button,
 			.button {
-				padding: 0;
+				padding: 5;
 			}
 
 		}
@@ -3164,6 +3164,7 @@ input, select, textarea {
 						background-color: rgba(255, 255, 255, 0.075);
 					}
 
+
 		#header.alt {
 			background-color: transparent;
 		}
@@ -3172,6 +3173,11 @@ input, select, textarea {
 				opacity: 0;
 				visibility: hidden;
 			}
+
+		#header-socialmedia {
+			display: inline;
+			
+		}
 
 		@media screen and (max-width: 736px) {
 
@@ -3202,6 +3208,10 @@ input, select, textarea {
 								background-color: inherit;
 							}
 
+							#header-socialmedia {
+								display: inline;
+							}
+
 		}
 
 		@media screen and (max-width: 480px) {
@@ -3223,6 +3233,10 @@ input, select, textarea {
 					margin-left: 0;
 					padding-right: 1.25em;
 				}
+			
+			#header-socialmedia {
+				display: none;
+			}
 
 		}
 
@@ -3610,7 +3624,7 @@ input, select, textarea {
 		#wrapper > header {
 			padding: 6.5em 2em 3em 2em ;
 			background-size: auto,
- 125%;
+cover;
 			margin-bottom: -2.5em;
 		}
 
@@ -4154,3 +4168,83 @@ input, select, textarea {
 		}
 
 	}
+
+/* Social Media Icons */
+
+.fa-home,
+.fa-phone,
+.fa-envelope,
+.fa-twitter,
+.fa-linkedin,
+.fa-facebook-f,
+.fa-youtube,
+.fa-instagram,
+.fa-github{
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+/* social media icons hover color */
+.fa-home:hover,
+.fa-home:focus {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.fa-phone:hover,
+.fa-phone:focus {
+  color: #4dc85a;
+  transform: scale(1.1);
+}
+
+.fa-envelope:hover,
+.fa-envelope:focus {
+  color: yellow;
+  transform: scale(1.1);
+}
+
+.fa-facebook-f:hover,
+.fa-facebook-f:focus {
+  color: #1877f2;
+  transform: scale(1.1);
+}
+.fa-twitter:hover,
+.fa-twitter:focus {
+  color: #1da1f2;
+  transform: scale(1.1);
+}
+
+.fa-youtube:hover,
+.fa-youtube:focus {
+  color: #df2426;
+  transform: scale(1.1);
+}
+
+.fa-instagram:hover,
+.fa-instagram:focus {
+  color: #bd22a2;
+  transform: scale(1.1);
+}
+
+.fa-github:hover,
+.fa-github:focus {
+  color: #000;
+  transform: scale(1.1);
+}
+
+.fa-linkedin:hover,
+.fa-linkedin:focus {
+  color: #0a66c2;
+  transform: scale(1.1);
+}
+
+.fa-codepen:hover,
+.fa-codepen:focus {
+  color: #000;
+  transform: scale(1.1);
+}
+
+.fa-pinterest:hover,
+.fa-pinterest:focus {
+  color: #b3001b;
+}
