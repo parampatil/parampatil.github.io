@@ -211,15 +211,15 @@
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
 							<p>Please fill contact form below. I would be really happy to get in touch with you . Also I am available on various social-media platforms.</p>
-							<form method="post" action="#">
+							<form id="contactForm">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<input type="text" name="name" id="name"/>
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
+										<input type="email" name="email" id="email"/>
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
@@ -227,7 +227,7 @@
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" value="Send Message"/></li>
 								</ul>
 							</form>
 							<ul class="contact">
@@ -277,12 +277,16 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+			<script type="module" src="assets/js/contact_form.js"></script>
+		<!-- <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script> -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
 			<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script><script  src="./assets/js/script.js"></script>
 			
 </html>
