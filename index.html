@@ -201,6 +201,11 @@
 						<h1 slot="header">Precision Agriculture</h1>
 						<p slot="content">A ML Project to Analyse & improve farming.</p>
 						</card>
+
+						<a href="https://parampatil.github.io/Railroads-Online/"><card data-image="images/RRO.jpg">
+							<h1 slot="header">Railroads-Online!</h1>
+							<p slot="content">Website Made for RRO Tools</p>
+							</card></a>
 					</div>
 					</div>
 
@@ -211,7 +216,7 @@
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
 							<p>Please fill contact form below. I would be really happy to get in touch with you . Also I am available on various social-media platforms.</p>
-							<form id="contactForm">
+							<form id="contactForm" onsubmit="submitButton()">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
@@ -227,9 +232,13 @@
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message"/></li>
+									<li><input type="submit" value="Send Message" id="submit_form"/></li>
 								</ul>
+								<div class="alert">
+									<span class="alert_text">Successfully sent message</span>
+								</div>
 							</form>
+
 							<ul class="contact">
 								<li class="icon solid fa-home">
 									Address<br />
@@ -252,7 +261,6 @@
 							</ul>
 						</div>
 					</section>
-
 			</div>
 
 			<!-- Back to top button -->
@@ -279,7 +287,7 @@
 		<!-- Scripts -->
 			<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
 			<script type="module" src="assets/js/contact_form.js"></script>
-		<!-- <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script> -->
+			<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
