@@ -23,8 +23,9 @@ h1 + p, p + p {
   margin-top: 10px;
 } */
 
+
 .card_container {
-  padding: 40px 80px;
+  padding: 40px 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
