@@ -3486,6 +3486,25 @@ body.is-menu-visible #menu .inner {
 
 #banner {
   padding: 10em 0 4.75em 0;
+  position: relative;
+}
+
+#new-portfolio {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  z-index: 100001;
+  cursor:grab;
+  transition: all 0.5s;
+  transition-duration: 300ms;
+}
+
+#new-portfolio:hover {
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
 }
 
 #banner .inner {
